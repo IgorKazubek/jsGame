@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+
+    <script async src="./js/logic.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="main">
+        <div id="statistic">
+            <div id="score">Score: 0</div>
+            <div id="timer">Time: 0:00</div>
+            <div id="lives">Lives: 5</div>
+
+        </div>
+        <button id="start">START</button>
+    </div>
+
+    <div id="modalStart" class="modal_form">
+        <span id="modal_close">X</span>
+        <h2>Hello, Comander!</h2>
+        <p>Please, tell us your name:</p>
+        <form>
+            <input type="text" id="name" placeholder="Input name" style="height:25pt; font-size:20pt;" autofocus />
+        </form>
+
+        <p>Are you ready to defence our Galaxy?</p>
+        <div id="acceptToPlay">START</div>
+    </div>
+
+    <div id="modalEnd" class="modal_form" style="left:33%;">
+        <h2>Game over!</h2>
+        <p>You could not become the savior of the galaxy. So shame...</p>
+        <p>Do you want to repeat this heroical defense?</p>
+        <div>
+            <div id="ansY" class="answer">I'll do it!!!</div>
+            <div id="ansN" class="answer" style="margin-left:50pt;">No, it's not for me</div>
+        </div>
+        <p>------------------------------------</p>
+        <div id="best" class="answer">Best results</div>
+    </div>
+
+    <div id="bestResults" class="modal_form" style="left:50%;top:45%;">
+        <ol id="resTable" style="margin:auto;"></ol>
+        <p>-----------------</p>
+        <div id="cancel" class="answer">Cool!</div>
+    </div>
+
+    <div id="overlay"></div>
+
+    <div id="ship"></div>
+</body>
+</html>
